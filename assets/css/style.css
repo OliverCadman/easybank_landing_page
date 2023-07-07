@@ -138,6 +138,19 @@ img {
 }
 
 /* Hero Section */
+.hero__bg {
+  position: relative;
+  top: 0;
+  transform: translateY(-12%);
+}
+
+.mockup-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -17%);
+  width: 95%;
+}
 
 /* About Section */
 
