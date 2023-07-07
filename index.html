@@ -9,13 +9,53 @@
 </head>
 
 <body>
-    <h1>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="navbar-logo">
+            <img src="./assets/images/logo.svg" alt="Company Logo" class="navbar-logo">
+        </div>
+        <button class="navbar-toggle-sm" type="button" aria-label="Toggle Navigation" aria-expanded="false"
+            aria-controls="navbarNav" id="navbar-toggler">
+            <img src="./assets/images/icon-hamburger.svg" alt="Hamburger icon to toggle mobile navbar">
+            <span class="sr-only">Toggle Navigation</span>
+        </button>
+        <div class="navbar-nav collapse navbar-collapse" id="navbarNav">
+            <ul class="navlink-list">
+                <li>
+                    <a href="#" class="navlink">Home</a>
+                </li>
+                <li>
+                    <a href="#" class="navlink">About</a>
+                </li>
+                <li>
+                    <a href="#" class="navlink">Contact</a>
+                </li>
+                <li>
+                    <a href="#" class="navlink">Blog</a>
+                </li>
+                <li>
+                    <a href="#" class="navlink">Careers</a>
+                </li>
+            </ul>
+        </div>
+        <div class="navbar-cta">
+            <button class="cta-btn">Request Invite</button>
+        </div>
+    </nav>
+    <main>
+        <div class="overlay" id="overlay"></div>
+    </main>
+    <script>
+        const mobNavDropdown = document.querySelector("#navbarNav");
+        const navToggler = document.querySelector("#navbar-toggler");
+        const navOverlay = document.querySelector("#overlay");
 
+        navToggler.addEventListener("click", () => {
+            mobNavDropdown.classList.toggle("show");
+            navOverlay.classList.toggle("show");
 
-
-
-
-    </h1>
+        })
+    </script>
 </body>
 
 </html>
