@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+/* CSS Variables */
+:root {
+  /* Button/Icon Gradients */
+  --bg-gradient-fallback: rgb(51, 211, 94);
+  --bg-gradient: linear-gradient(
+    45deg,
+    rgba(51, 211, 94, 1) 0%,
+    rgba(42, 182, 217, 1) 100%
+  );
+
+  /* Primary BGs */
+  --dark-blue: #2d314d;
+  --very-light-gray: #fafafa;
+  --light-gray-blue: #f3f4f6;
+  --white: #fff;
+
+  /* Font Colours */
+  --text-gray: #9597a5;
+  --text-dark-blue: #2d314d;
+  --text-white: #fff;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+/* Hero Section */
+
+/* About Section */
+
+/* Article Section */
+
+/* Footer Section */
