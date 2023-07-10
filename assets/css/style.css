@@ -101,6 +101,12 @@ img {
   width: 100%;
 }
 
+.p-lead {
+  letter-spacing: -0.23px;
+  line-height: 25px;
+  font-size: 15px;
+}
+
 .cta-btn {
   background-color: var(--bg-gradient-fallback);
   background: var(--bg-gradient);
@@ -242,12 +248,40 @@ img {
   margin-top: 1rem;
   margin-bottom: 2rem;
   text-align: center;
-  letter-spacing: -0.23px;
-  line-height: 25px;
-  font-size: 15px;
 }
 
 /* About Section */
+
+.about-section {
+  background-color: var(--light-gray-blue);
+  text-align: center;
+}
+
+.about__header {
+  margin-bottom: 3.5rem;
+}
+
+.about-section__padded {
+  padding: 4rem 1.5rem;
+}
+
+.about-section__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.about-section__item .icon {
+  width: 72px;
+  height: 72px;
+}
+
+.about-section__item h3 {
+  font-size: 1.25rem;
+  font-weight: 300;
+  margin: 1.5rem 0 1rem 0;
+}
 
 /* Article Section */
 
@@ -255,9 +289,15 @@ img {
 
 /* Desktop Screen Width */
 @media screen and (min-width: 1000px) {
+  .p-lead {
+    font-size: 1rem;
+    line-height: 26px;
+    letter-spacing: -0.25px;
+  }
+
   /* Navbar */
   .navbar {
-    padding: 2rem 10rem;
+    padding: 1rem 10rem;
   }
 
   .navbar-expand-lg .navbar-toggle-sm {
@@ -306,20 +346,24 @@ img {
     background: url(../images/bg-intro-desktop.svg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: calc(100% + 300px) calc(100% - 200px);
+    background-position: calc(100% + 250px) calc(100% - 200px);
+    height: 800px;
   }
   .hero__bg-images {
     order: 2;
   }
 
   .mockup-img {
-    transform: translate(22%, -15%);
+    position: absolute;
+    transform: translate(18%, -15%);
+    width: 100%;
   }
 
   .hero__bg-content {
     display: block;
     margin: 0;
     margin-top: 10rem;
+    margin-bottom: 10rem;
     margin-left: 10rem;
     width: 100%;
     max-width: 447px;
@@ -338,5 +382,45 @@ img {
   .hero__bg-content p {
     font-size: 1.125rem;
     line-height: 28px;
+  }
+
+  /* About Section */
+  .about-section {
+    text-align: left;
+  }
+
+  .about-section__padded {
+    padding: 6rem 10.313rem 5.875rem 10.313rem;
+  }
+
+  .about__header {
+    width: 100%;
+    max-width: 635px;
+    margin-bottom: 4.5rem;
+  }
+
+  .about__header h2 {
+    font-size: 2.5rem;
+    line-height: 64px;
+    letter-spacing: -0.71px;
+  }
+
+  .about__header p {
+    font-size: 1.125rem;
+    line-height: 28px;
+    letter-spacing: -0.28px;
+    margin-top: 1rem;
+  }
+
+  .about-section__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.875rem;
+  }
+
+  .about-section__item {
+    display: block;
+    width: 100%;
+    max-width: 255px;
   }
 }
