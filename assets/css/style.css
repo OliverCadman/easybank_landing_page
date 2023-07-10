@@ -28,6 +28,11 @@
   --text-gray: #9597a5;
   --text-dark-blue: #2d314d;
   --text-white: #fff;
+
+  /* Font Weights */
+  --font-light: 300;
+  --font-regular: 400;
+  --font-bold: 700;
 }
 
 *,
@@ -36,6 +41,11 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -53,6 +63,18 @@ body {
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-dark-blue);
+  font-weight: var(--font-light);
+}
+
+p {
+  color: var(--text-gray);
 }
 
 ul {
@@ -77,6 +99,19 @@ input::-moz-focus-inner {
 
 img {
   width: 100%;
+}
+
+.cta-btn {
+  background-color: var(--bg-gradient-fallback);
+  background: var(--bg-gradient);
+  color: var(--text-white);
+  height: 44px;
+  width: 163px;
+  border-radius: 100px;
+  font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 700;
 }
 
 /* Navbar */
@@ -138,18 +173,78 @@ img {
 }
 
 /* Hero Section */
+.bg-lg {
+  display: none;
+}
+
+.hero-section {
+  background-color: var(--very-light-gray);
+}
+
 .hero__bg {
+  display: flex;
+  flex-direction: column;
   position: relative;
   top: 0;
   transform: translateY(-12%);
 }
 
+.hero__bg-images {
+  display: flex;
+  justify-content: center;
+  order: 1;
+}
+
+.hero__bg-content {
+  order: 2;
+}
+
 .mockup-img {
+  z-index: 1;
+  transform: translateY(-11%);
+  width: 90%;
+}
+
+.hero__bg-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -50px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.hero__bg-images {
+  position: relative;
+  width: 100%;
+}
+
+.hero__bg-images::before {
+  content: "";
   position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, -17%);
-  width: 95%;
+  height: 100%;
+  background: url(../images/bg-intro-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center 0;
+  width: 100%;
+  display: block;
+  z-index: 1;
+}
+
+.hero__bg-content h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  letter-spacing: -0.71px;
+}
+
+.hero__bg-content p {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  letter-spacing: -0.23px;
+  line-height: 25px;
+  font-size: 15px;
 }
 
 /* About Section */
@@ -160,13 +255,9 @@ img {
 
 /* Desktop Screen Width */
 @media screen and (min-width: 1000px) {
-  body {
-    padding: 0 10rem;
-  }
-
   /* Navbar */
   .navbar {
-    padding: 2rem 0;
+    padding: 2rem 10rem;
   }
 
   .navbar-expand-lg .navbar-toggle-sm {
@@ -181,19 +272,6 @@ img {
     display: block;
   }
 
-  .cta-btn {
-    background-color: var(--bg-gradient-fallback);
-    background: var(--bg-gradient);
-    color: var(--text-white);
-    height: 44px;
-    width: 163px;
-    border-radius: 100px;
-    font-family: "Public Sans", system-ui, -apple-system, BlinkMacSystemFont,
-      "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
-      "Helvetica Neue", sans-serif;
-    font-weight: 700;
-  }
-
   .navlink-list {
     flex-direction: row;
   }
@@ -205,5 +283,60 @@ img {
 
   .navlink {
     color: var(--text-gray);
+  }
+
+  /* Hero Section */
+
+  .bg-sm {
+    display: none;
+  }
+
+  .hero__bg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    transform: none;
+  }
+
+  .hero__bg-images {
+    position: relative;
+  }
+
+  .hero__bg-images::before {
+    background: url(../images/bg-intro-desktop.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 300px) calc(100% - 200px);
+  }
+  .hero__bg-images {
+    order: 2;
+  }
+
+  .mockup-img {
+    transform: translate(22%, -15%);
+  }
+
+  .hero__bg-content {
+    display: block;
+    margin: 0;
+    margin-top: 10rem;
+    margin-left: 10rem;
+    width: 100%;
+    max-width: 447px;
+  }
+
+  .hero__bg-content h1,
+  .hero__bg-content p {
+    text-align: left;
+  }
+
+  .hero__bg-content h1 {
+    line-height: 64px;
+    font-size: 3.5rem;
+  }
+
+  .hero__bg-content p {
+    font-size: 1.125rem;
+    line-height: 28px;
   }
 }
