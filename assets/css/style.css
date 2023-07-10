@@ -15,6 +15,7 @@
   --very-light-gray: #fafafa;
   --light-gray-blue: #f3f4f6;
   --white: #fff;
+  --green: rgb(51, 211, 94);
 
   /* Overlay BG */
   --bg-overlay-fallback: rgb(0, 0, 0, 0.3);
@@ -97,7 +98,8 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-img {
+img,
+svg {
   width: 100%;
 }
 
@@ -326,6 +328,57 @@ cite {
 }
 
 /* Footer Section */
+footer {
+  background-color: var(--dark-blue);
+  padding: 2.5rem 4.875rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer .social-icons {
+  text-align: center;
+}
+
+footer .social-icons ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+footer .social-icons li {
+  width: 20px;
+  height: 20px;
+}
+
+.footer__easybank-links {
+  margin-bottom: 2rem;
+}
+
+.footer__easybank-links .navlink-list {
+  text-align: center;
+}
+
+.footer__easybank-links .navlink {
+  color: var(--text-white);
+}
+
+.footer-cta {
+  text-align: center;
+}
+
+.footer-cta .cta-btn {
+  margin-bottom: 2rem;
+}
+
+small {
+  display: block;
+  color: var(--text-gray);
+  font-size: 0.9rem;
+  line-height: 26px;
+  letter-spacing: -0.23px;
+}
 
 /* Desktop Screen Width */
 @media screen and (min-width: 1000px) {
@@ -333,6 +386,30 @@ cite {
     font-size: 1rem;
     line-height: 26px;
     letter-spacing: -0.25px;
+  }
+
+  .cta-btn {
+    transition: all 0.2s ease;
+    cursor: pointer;
+    position: relative;
+  }
+
+  .cta-btn:after {
+    transition: all 0.2s ease;
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    opacity: 0;
+  }
+
+  .cta-btn:hover:after {
+    opacity: 0.3;
   }
 
   /* Navbar */
@@ -363,6 +440,17 @@ cite {
 
   .navlink {
     color: var(--text-gray);
+    transition: all 0.2s ease;
+  }
+
+  .navlink:hover {
+    margin: 7em auto 1em;
+    padding: 0 0 2em;
+    border-bottom: 4px solid transparent;
+    border-image: var(--bg-gradient);
+    border-image-slice: 1;
+    width: 10em;
+    height: 5em;
   }
 
   /* Hero Section */
@@ -480,5 +568,61 @@ cite {
   .article-img img {
     height: 200px;
     object-fit: cover;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: row;
+    padding: 3rem 10.313rem;
+  }
+
+  footer .social-icons ul {
+    margin-top: 4.688rem;
+  }
+
+  .footer__easybank-links ul li a,
+  .social-icons ul li a svg path {
+    transition: all 0.2s ease;
+  }
+
+  .footer__easybank-links ul li a:hover {
+    color: var(--green);
+  }
+
+  .social-icons ul li a:hover svg path {
+    fill: var(--green);
+  }
+
+  .footer__easybank-links .navlink-list li:nth-child(2) {
+    grid-column: 1 / 2;
+  }
+
+  .footer__easybank-links .navlink-list li:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  .footer__easybank-links .navlink-list li:nth-child(4) {
+    grid-column: 2 / 3;
+    grid-row: 1 / -1;
+  }
+  .footer__easybank-links .navlink-list li:nth-child(6) {
+    grid-column: 2 / 3;
+  }
+
+  .footer__easybank-links {
+    margin-right: auto;
+    margin-left: 8.188rem;
+  }
+
+  .footer__easybank-links .navlink-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1rem;
+    column-gap: 7.75rem;
+  }
+
+  .footer__easybank-links .navlink-list {
+    text-align: left;
   }
 }
