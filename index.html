@@ -47,7 +47,7 @@
         <section class="hero-section">
             <div class="hero__bg">
                 <div class="hero__bg-content">
-                    <h1>Next generation digital banking</h1>
+                    <h1 class="large-header-sm">Next generation digital banking</h1>
                     <p class="p-lead">Take your financial life online. Your Easybank account will be a
                         one-stop-shop for spending, saving,
                         budgeting, investing, and much more.</p>
@@ -124,6 +124,38 @@
 
                     </li>
                 </ul>
+                <div class="about-section__form-container">
+                    <div class="header form-bg">
+                        <h2 class="large-subheader-sm">
+                            Unlock Your Financial Freedom
+                        </h2>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="form-callout">
+                            <p>Request your exclusive invitation to join our Digital Banking revolution!</p>
+                        </div>
+                        <form action="#" class="invite-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="First Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Last Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Telephone">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" placeholder="How did you hear about us?">
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="submit-btn cta-btn">Join Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="article-section">
@@ -329,6 +361,27 @@
             navOverlay.classList.toggle("show");
 
         })
+
+        const formBG = document.querySelector(".form-bg");
+
+        const calculateWidth = () => {
+            return `${window.innerWidth + 400}px`;
+        }
+
+        const calculateHeight = () => {
+            return `${window.innerHeight - 300}px`
+        }
+
+        const setSize = () => {
+            formBG.style.setProperty("--form-bg-width", calculateWidth());
+            formBG.style.setProperty("--form-bg-height", calculateHeight());
+        }
+
+        window.addEventListener("resize", (e) => {
+            setSize();
+        })
+
+        setSize();
     </script>
 </body>
 
