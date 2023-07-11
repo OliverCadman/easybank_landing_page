@@ -327,7 +327,7 @@ svg {
   background-image: url(../images/bg-invite-form-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  top: 30px;
+  top: 40px;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 750px;
@@ -337,6 +337,8 @@ svg {
 .header.form-bg h2 {
   color: white;
   position: relative;
+  width: 300px;
+  margin: 0 auto;
 }
 
 .invite-form {
