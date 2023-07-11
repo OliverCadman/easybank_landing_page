@@ -628,6 +628,11 @@ small {
     max-width: 255px;
   }
 
+  /* Form */
+  .about-section__form-container {
+    display: none;
+  }
+
   /* Article Section */
 
   .article-content {
