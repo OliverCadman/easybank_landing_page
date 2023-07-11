@@ -627,3 +627,9 @@ small {
     text-align: left;
   }
 }
+
+@media screen and (min-width: 1000px) and (max-width: 1330px) {
+  .hero__bg {
+    grid-template-columns: 40% 1fr;
+  }
+}
