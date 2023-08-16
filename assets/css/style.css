@@ -633,3 +633,39 @@ small {
     grid-template-columns: 40% 1fr;
   }
 }
+
+
+.form-section {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background-color:#fafafa;
+
+}
+
+.span-two {
+  display: flex;
+  flex-basis: 48%;
+}
+
+
+@media (max-width: 768px) {
+  .span-2 img {
+    background-image: url("./assets/images/bg-invite-form-mobile.svg"); /* Replace with your mobile image path */
+  }
+}
+
+.form-row {
+  background-color: white;
+  max-width: 35%;
+}
+
+
+.form-title {
+
+}
+
+.btn-primary{
+  background-color:aquamarine;
+  color: aquamarine;
+}
