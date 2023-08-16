@@ -643,9 +643,9 @@ small {
 
 }
 
-.span-two {
-  display: flex;
+.span-2 {
   flex-basis: 48%;
+
 }
 
 
@@ -657,15 +657,32 @@ small {
 
 .form-row {
   background-color: white;
-  max-width: 35%;
-}
-
-
-.form-title {
+  padding: 20px;
 
 }
 
-.btn-primary{
-  background-color:aquamarine;
-  color: aquamarine;
+
+.image-text-container {
+  position: relative;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 42%; /* Adjust vertical position as needed */
+  left: 52%; /* Adjust horizontal position as needed */
+  transform: translate(-50%, -50%); /* Center the text horizontally and vertically */
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
+  max-width: 50%;
+}
+
+.text-overlay h1 {
+  margin: 0;
+  font-size: 330%;
+}
+
+.form-container {
+  max-width: 30%;
 }
