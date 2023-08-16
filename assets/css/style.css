@@ -644,11 +644,12 @@ small {
 
 }
 
-.span-2 {
-  flex-basis: 48%;
+
+
+.span-2 img {
+  width: 120%;
 
 }
-
 
 @media (max-width: 768px) {
   .span-2 img {
@@ -659,14 +660,17 @@ small {
 .form-row {
   background-color: white;
   padding: 15px;
+  height: 30%;
+  width: 115%;
+
 
 }
 
 
 .image-text-container {
   position: relative;
-  right: 10%;
-  top: 18%;
+
+  transform: translate(-18%, 18%);
 }
 
 .text-overlay {
@@ -677,31 +681,33 @@ small {
   padding: 20px;
   border-radius: 10px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-  max-width: 50%;
+
 }
 
 .text-overlay h1 {
-  margin: 0;
-  font-size: 330%;
-  font-weight:var(--font-light);
+  margin-left: 8%;
+  font-size: 450%;
+  font-weight: var(--font-light);
   color: white;
+  width: 140%;
 }
 
 .form-container {
-  max-width: 25%;
-  margin-top: 8%;
-
-
+  max-width: 32%;
+  margin-top: 11%;
+  margin-left: 4%;
 }
 
 .form-group {
   background-color: white;
+
 }
 
 .form-title h3 {
-  padding-bottom:2%;
+  padding-bottom:3%;
   color: #9597A5;
   font-weight:var(--font-light);
+  font-size: 240%;
 }
 
 .form-cta {
