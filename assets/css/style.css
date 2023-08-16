@@ -306,10 +306,37 @@ figure{
   flex-basis: 50%;
 
 }
-.contact__bg img{
-  margin-left: -15%;
+
+.contact__bg{
+  position: relative;
+  text-align: center;
+}
+
+
+.contact__bg-h1{
+  position: absolute;
+  top: 33%;
+  left: 15%;
   
 }
+.contact__bg-h1 h1{
+  color: white;
+  
+  font-size: 2.6rem;
+  text-align: left;
+  
+  
+}
+.contact__bg img{
+  margin-left: -30%;
+  
+}
+
+.about-contact-box2{
+  
+  padding-top: 3% ;
+}
+
 .contact__form-box{
   background-color: white;
   padding-top: 8%;
@@ -319,10 +346,7 @@ figure{
   padding-bottom: 7%;
   width: 100%;
 }
-.about-contact-box2{
-  
-  padding-top: 3% ;
-}
+
 
 .contact__form-box form input{
   background-color: var(--light-gray-blue);
@@ -344,12 +368,7 @@ figure{
   width: 90%;
 }
 
-.contact__form-box form button{
-  margin-top: 10%;
-  margin-left: 10%;
-  width: 65%;
-  
-}
+
 
 
 
@@ -365,6 +384,13 @@ figure{
   letter-spacing: -0.57px;
   color: #9597a5;
   
+  
+}
+
+.contact__form-box form button{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 65%;
   
 }
 
