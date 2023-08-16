@@ -291,6 +291,82 @@ svg {
   font-weight: 300;
   margin: 1.5rem 0 1rem 0;
 }
+/* Contact Section */
+
+
+.about-contact{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: var(--light-gray-blue);
+  padding-top: -5%;
+}
+
+figure{
+  flex-basis: 50%;
+
+}
+.contact__bg img{
+  margin-left: -15%;
+  
+}
+.contact__form-box{
+  background-color: white;
+  padding-top: 8%;
+  padding-left: 5%;
+  margin: 4%;
+  margin-left: 1%;
+  padding-bottom: 7%;
+  width: 100%;
+}
+.about-contact-box2{
+  
+  padding-top: 3% ;
+}
+
+.contact__form-box form input{
+  background-color: var(--light-gray-blue);
+  border: none;
+  padding: 1%;
+  margin: 2%;
+  color: #9597a5;
+  width: 42%;
+  
+  
+}
+
+.contact__form-box form select{
+  background-color: var(--light-gray-blue);
+  border: none;
+  padding: 1%;
+  margin: 2%;
+  color: #9597a5;
+  width: 90%;
+}
+
+.contact__form-box form button{
+  margin-top: 10%;
+  margin-left: 10%;
+  width: 65%;
+  
+}
+
+
+
+.about-contact-box2{
+  
+  padding-right: 15%;
+  
+  
+}
+.contact__form h1{
+  
+  font-size: 1.8rem;
+  letter-spacing: -0.57px;
+  color: #9597a5;
+  
+  
+}
 
 /* Article Section */
 .article-section {
