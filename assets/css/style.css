@@ -301,22 +301,30 @@ svg {
   justify-content: space-between;
   background-color: var(--light-gray-blue);
   padding-top: -5%;
+  
 }
 
 figure{
   flex-basis: 50%;
 
 }
-
+/*about-contact page box1*/
 .contact__bg{
   position: relative;
   text-align: center;
 }
+/*side-image*/
 
+.contact__bg img{
+  margin-left: -38%;
+  
+}
+
+/*text positioning over side-image*/
 
 .contact__bg-h1{
   position: absolute;
-  top: 37%;
+  top: 35%;
   left: 15%;
   
 }
@@ -328,16 +336,27 @@ figure{
   
   
 }
-.contact__bg img{
-  margin-left: -30%;
-  
-}
+
+/*about-contact page box2*/
 
 .about-contact-box2{
   
   padding-top: 3% ;
+  padding-right: 15%;
 }
 
+/*heading*/
+.contact__form h1{
+  
+  font-size: 1.8rem;
+  letter-spacing: -0.57px;
+  color: #9597a5;
+  
+  
+}
+
+
+/*form*/
 .contact__form-box{
   background-color: white;
   padding-top: 8%;
@@ -348,56 +367,54 @@ figure{
   width: 100%;
 }
 
-
+/* input */
 .contact__form-box form input{
   background-color: var(--light-gray-blue);
   border: none;
-  padding: 1%;
+  padding: 2%;
   margin: 2%;
   color: #9597a5;
   width: 42%;
+  font-size: 1rem;
   
   
 }
+
+/* select */
 
 .contact__form-box form select{
   background-color: var(--light-gray-blue);
   border: none;
-  padding: 1%;
+  padding: 2%;
   margin: 2%;
   color: #9597a5;
   width: 90%;
+  font-size: 1rem;
 }
 
-
-
-
-
-.about-contact-box2{
-  
-  padding-right: 15%;
-  
-  
-}
-.contact__form h1{
-  
-  font-size: 1.8rem;
-  letter-spacing: -0.57px;
-  color: #9597a5;
-  
-  
-}
-
+/* join us button*/
 .contact__form-box form button{
   margin-top: 10%;
   margin-left: 10%;
   width: 65%;
+
   
 }
 /* contact form for mobile*/
 @media screen and (max-width: 1000px){
+  .about-contact{
+    padding-bottom: 15%;
+  }
+  /*about-contact-box1*/
   .contact__bg{
-    margin-left: -10%;
+    margin-left: -13%;
+  }
+
+  .contact__bg-h1{
+    position: absolute;
+    top: 38%;
+    left: 25%;
+    
   }
   .contact-img{
     content: url("/assets/images/bg-invite-form-mobile.svg");
@@ -412,6 +429,56 @@ figure{
 
     font-size: 2.3rem;
  
+  }
+  
+  /*about-contact-box2*/
+  .about-contact-box2{
+   
+    margin-top: -10%;
+    
+  }
+  .contact__form-box{
+    background-color: white;
+    margin-left: 9%;
+    margin-bottom: -5%;
+    height: fit-content;
+    padding-left: 10%;
+    
+    
+  }
+
+  .contact__form h1{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-left: 16%;
+  }
+
+  
+
+  .contact__form-box form input{
+   
+    
+    padding: 3%;
+    margin: 2%;
+    width: 82%;
+ 
+  }
+
+  .contact__form-box form select{
+   
+    
+    padding: 3%;
+    margin: 2%;
+    width: 82%;
+ 
+  }
+
+  .contact__form-box form button{
+    margin-left: 0%;
+    width: 95%;
+    font-size: 1.2rem;
+   
+    
   }
   
 
