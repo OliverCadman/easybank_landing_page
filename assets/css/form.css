@@ -1,23 +1,17 @@
 .Contact-section {
-    background-color: var(--light-gray-blue);
+    background-color: rgb(191, 191, 191);
 }
 
-.contact-bg {
+.contact-section-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: center;
-    
 }
 
-.contact-bg-images {
-    display:flex;
+.contact-content {
+    display: flex;
     flex-direction: row;
-    
-    
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-
-.contact-bg-content {
-    text-align: center;
-}
