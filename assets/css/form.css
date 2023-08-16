@@ -1,0 +1,124 @@
+.form-section {
+    background-color: var(--light-gray-blue);
+    text-align: center;
+    }
+  
+  .form-wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    transform: translateY(-12%);
+  }
+  
+  .form-image {
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+  
+  .form-container {
+    order: 2;
+  }
+  
+  .image-title {
+    z-index: 1;
+    transform: translateY(-11%);
+    width: 90%;
+  }
+  
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -30px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .form-image {
+    position: relative;
+    width: 100%;
+  }
+  
+  .form-image::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center 0;
+    width: 100%;
+    display: block;
+    z-index: 1;
+  }
+  
+  .form-image-title {
+    font-size: 2.5rem;
+    text-align: center;
+    letter-spacing: -0.71px;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .bg-sm {
+    display: none;
+  }
+
+  .form-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    transform: none;
+  }
+
+  .form-image {
+    position: relative;
+  }
+
+  .form-image::before {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: calc(100% + 250px) calc(100% - 200px);
+    height: 800px;
+  }
+  .form-image {
+    order: 2;
+  }
+
+  .image-title {
+    position: absolute;
+    transform: translate(18%, -15%);
+    width: 100%;
+    color: white;
+  }
+
+  .form-container {
+    display: block;
+    margin: 0;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    margin-left: 10rem;
+    width: 100%;
+    max-width: 447px;
+  }
+
+  .image-title,
+  .form-container h2 {
+    text-align: left;
+  }
+
+  .image-title {
+    line-height: 64px;
+    font-size: 3.5rem;
+  }
+
+  .form-container h2 {
+    font-size: 2.5rem;
+    line-height: 50px;
+    letter-spacing: -0.71px;
+    text-align: left;
+    color: var(--text-gray);
+  }
+
