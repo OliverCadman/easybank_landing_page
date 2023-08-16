@@ -6,6 +6,36 @@
     box-sizing: border-box;
 }
 
+.svg-container {
+    width: 887px;
+    height: 460px;
+    flex-shrink: 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.overlay-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 518px;
+    height: 214px;
+    flex-shrink: 0;
+    color: white;
+    font-family: Public Sans;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: -1px;
+    padding: 10px 0;
+}
+
 .caption {
     width: 503px;
     height: 90px;
