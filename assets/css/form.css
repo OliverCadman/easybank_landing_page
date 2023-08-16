@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 552px;
+    height: 269px;
+    flex-shrink: 0;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFFF;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 23px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    flex: 1;
+    position: relative;
+}
+
+.input-group input {
+    width: 244px;
+    height: 35px;
+    flex-shrink: 0;
+    padding-left: 5px;
+    background: #F4F5F7;
+    border: none;
+    outline: none;
+    color: #979797;
+    font-family: 'Public Sans';
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.input-group input::placeholder {
+    width: 124px;
+    height: 29px;
+    color: #979797;
+    font-family: 'Public Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+}
+
+.textarea-group input {
+    width: 512px;
+    height: 35px;
+    color: #979797;
+    font-family: 'Public Sans';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    padding-left: 5px;
+    background: #F4F5F7;
+    border: none;
+    outline: none;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+}
+
+.button button {
+    width: 220px;
+    height: 35px;
+    flex-shrink: 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #33D35E 0%, #2AB6D9 100%);
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+    color: #FFF;
+    font-family: Public Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+}
