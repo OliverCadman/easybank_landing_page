@@ -633,3 +633,79 @@ small {
     grid-template-columns: 40% 1fr;
   }
 }
+/* LA MIERDA EXTRA QUE LE METI PA QUE QUEDE UN PELO MAS DEPINGA */
+.contact-form-section {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.contact-form-section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+}
+
+button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+/* LA 2DA MIERDA EXTRA QUE LE METI DEPINGA */
+/* ... (rest of the CSS remains unchanged) ... */
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none;  /* This will remove the default appearance of select in some browsers */
+  background: url('path_to_arrow_icon.png') no-repeat right center; /* This is optional: to show a custom arrow for the dropdown */
+}
+
+/* Styling for select when it's focused */
+select:focus {
+  outline: none;
+  border-color: #007BFF; /* you can change this to any color you prefer */
+}
+
+/* The default option in the dropdown to make it look like a placeholder */
+select option[value=""] {
+  color: #888;  /* You can adjust this color to make it slightly faded like placeholders */
+}
