@@ -6,6 +6,19 @@
     box-sizing: border-box;
 }
 
+.caption {
+    width: 503px;
+    height: 90px;
+    flex-shrink: 0;
+    color: #9597A5;
+    font-family: Public Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 50px; /* 156.25% */
+    letter-spacing: -1px;
+}
+
 .form {
     display: flex;
     flex-direction: column;
