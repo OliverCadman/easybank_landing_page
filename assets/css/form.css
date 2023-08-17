@@ -11,7 +11,7 @@
 
 
 
-.container {
+.container { /* Image */
     position: relative;
     text-align: center;
     width: 90%
@@ -22,7 +22,7 @@
     
 }
 
-.centered {
+.centered { /* Unlock */
     position: absolute;
     top: 42%;
     left: 50%;
@@ -36,7 +36,7 @@
     letter-spacing: -1px;
 }
 
-.Request { /*  */
+.Request { 
     position: absolute;
     color: #9597A5;
     font-family: Public Sans;
@@ -58,27 +58,27 @@
     background: #fff;
     color: #979797;
     font-family: Public Sans;
-    font-size: 48px;
+    font-size: 3rem;
     font-style: normal;
     font-weight: 300;
     line-height: 38px;
-    width: 20%;
-    height: 169px;
+    width: 30%;
+    height: 45%;
     flex-shrink: 0;
     gap: 10px;
     text-align: center;
     align-items: center;
-    padding: 2px;
-    transform: translate(-245px);    
-    top: 200px;
-    left: 75px;
+    padding: 0.5%;
+    transform: translate(-42%);    
+    top: 35%;
+    left: 5.5%;
 }
 
 .dd { /* Dropdown */
     background: #fff;
     color: #979797;
     font-family: Public Sans;
-    font-size: 16px;
+    font-size: 1rem;
     font-style: normal;
     font-weight: 300;
     line-height: 28px;
@@ -87,57 +87,36 @@
     align-items: center;
 }
 
-/* Desktop Screen Width */
-/* @media screen and (min-width: 1200px) {
-    .Sec-3 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
-    }
-}
 
-/* Laptop Screen Width */
-    /* @media screen and (min-width: 1000px) and (max-width: 1330px) {
-        
-        }
-      } */
-
- /*Tablet Screen Width*/
+ /*Phone Screen Width*/
     @media screen and (max-width: 650px) {
 
         .Sec-3{
             display: block;
+            height: 130%;
         }
         .Request {
             display: block;
-            transform: translate(150%);
-            bottom: -300%;
-            width: max-content;
-    }
-        .container {
-            
+            transform: translate(7%);
+            bottom: -227%;
+            font-size: 130%;
+            width: 90%;
         }
         .centered {
-          font-size: 150%;
-          display: flex;
-          line-height: 130%;
+            font-size: 150%;
+            display: flex;
+            line-height: 130%;
         }
-
-
-
-    /* .Contact-form form input{
-        display: block;
-    } */
-    }
-
-/* Phone Screen Width */
-/* @media screen and (max-width: 650px) {
-        .Sec-3{
-            padding-bottom: 15%;
-        } 
-        .Contact-form{
-            position: static;
-            width: auto;
+        .container{
+            display: flex;
+            translate: 0% -60%;
             
-        } */
-/* } */
+            
+        }       
+        .Contact-form {
+            transform: translate(7%);
+            height: 65%;
+            width: 80%;
+            margin-top: -25%;
+        }
+    }
