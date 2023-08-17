@@ -136,15 +136,15 @@
                     <div class="overlay-text">Unlock your financial freedom</div>
                 </div>
 
-            <div class="caption">
-                <p>
-                    Request your exclusive invitation to join our Digital Banking revolution!
-                </p>
 
-            </div>
             <!-- New Form Section -->
-            <div class="form">
-                <form action="#" method="post">
+            <div class="caption-form">
+                <div class="caption">
+                    <p>
+                        Request your exclusive invitation to join our Digital Banking revolution!
+                    </p>
+                </div>
+                <form class="form" action="#" method="post">
                     <div class="form-row">
                         <div class="input-group">
                             <input type="text" id="firstName" name="firstName" required placeholder="First Name">
@@ -167,7 +167,16 @@
 
                     <div class="form-row">
                         <div class="textarea-group">
-                            <input id="hearAboutUs" name="hearAboutUs" placeholder="How did you hear about us?"></input>
+                            <select id="hearAboutUs" name="hearAboutUs">
+                                <option value="" disabled selected>How did you hear about us?</option>
+                                <option value="google">Google</option>
+                                <option value="adverts">Advertisements</option>
+                                <option value="friends_family">Family and Friends</option>
+                                <option value="social_media">Social Media</option>
+                                <option value="events">Events/Conferences</option>
+                                <option value="word_of_mouth">Word of Mouth</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
                     </div>
 

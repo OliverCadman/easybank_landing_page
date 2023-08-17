@@ -6,35 +6,26 @@
     box-sizing: border-box;
 }
 
-.invite-form-container {
-    width: 100%;
-    background: #fafafa;
-}
-
 .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    gap: 20px;
-    width: 85%;
-    height: 435px;
-    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #F4F5F7;
 }
 
 .image-container {
-    grid-row: 1 / span 2;
-    grid-column: 1 / span 1;
-    width: 887px;
+    flex: 1;
     height: 460px;
+    width: 100%;
     flex-shrink: 0;
     position: relative;
 }
 
 .image {
-    position: absolute;
-    top: 0;
-    left: -100px;
+    position: relative;
+    transform: translateX(-150px) translateY(-35px) scaleX(1.1); /* Adjust the values as needed */
 }
+
 
 .overlay-text {
     display: flex;
@@ -42,12 +33,11 @@
     justify-content: center;
     text-align: left;
     position: absolute;
-    top: 55%;
-    left: 45%;
+    top: 45%;
+    left: 35%;
     transform: translate(-50%, -50%);
-    width: 518px;
+    width: 60%;
     height: 214px;
-    flex-shrink: 0;
     color: white;
     font-family: Public Sans;
     font-size: 56px;
@@ -59,30 +49,34 @@
 }
 
 .caption {
-    grid-row: 1 / span 1;
-    grid-column: 2;
-    width: 100%;
+    padding-top: 20px;
+    width: 70%;
     height: 90px;
-    flex-shrink: 0;
     color: #9597A5;
     font-family: Public Sans;
     font-size: 32px;
     font-style: normal;
     font-weight: 300;
-    line-height: 50px; /* 156.25% */
+    line-height: 50px;
     letter-spacing: -1px;
 }
 
-.form {
-    grid-row: 2;
-    grid-column: 2;
+.caption-form {
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    width: 100%;
+    gap: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    width: 70%;
     height: 269px;
-    flex-shrink: 0;
     margin: 0;
     padding: 0;
     background-color: #FFFFFF;
@@ -95,6 +89,8 @@
     gap: 23px;
     margin-top: 15px;
     margin-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 30px;
 }
 
 .input-group {
@@ -103,9 +99,8 @@
 }
 
 .input-group input {
-    width: 244px;
+    width: 100%;
     height: 35px;
-    flex-shrink: 0;
     padding-left: 5px;
     background: #F4F5F7;
     border: none;
@@ -118,7 +113,7 @@
 }
 
 .input-group input::placeholder {
-    width: 124px;
+    width: 100%;
     height: 29px;
     color: #979797;
     font-family: 'Public Sans';
@@ -128,8 +123,8 @@
     line-height: 28px;
 }
 
-.textarea-group input {
-    width: 512px;
+.textarea-group select {
+    width: 275%;
     height: 35px;
     color: #979797;
     font-family: 'Public Sans';
@@ -138,9 +133,15 @@
     font-weight: 300;
     line-height: 28px;
     padding-left: 5px;
-    background: #F4F5F7;
+    background: #F4F5F7 url('data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2214%22%20height%3D%227%22%20viewBox%3D%220%200%2014%207%22%20fill%3D%22none%22%3E%3Cpath%20d%3D%22M6.99985%206.22405C6.78567%206.22445%206.5781%206.15211%206.41318%206.01958L0.913179%201.57454C0.725981%201.42364%200.608258%201.2068%200.58591%200.97172C0.563562%200.736643%200.638419%200.502584%200.794012%200.321034C0.949606%200.139483%201.17319%200.0253136%201.41558%200.00363978C1.65797%20-0.018034%201.89931%200.0545637%202.08651%200.205463L6.99985%204.18822L11.9132%200.347705C12.0069%200.273858%2012.1148%200.218712%2012.2306%200.185434C12.3465%200.152157%2012.4679%200.141406%2012.588%200.153798C12.7081%200.16619%2012.8245%200.201481%2012.9305%200.257643C13.0365%200.313805%2013.13%200.389731%2013.2057%200.481055C13.2896%200.572464%2013.3532%200.679702%2013.3924%200.79605C13.4317%200.912398%2013.4457%201.03535%2013.4336%201.1572C13.4216%201.27905%2013.3837%201.39717%2013.3224%201.50417C13.2611%201.61117%2013.1777%201.70474%2013.0773%201.77901L7.57735%206.07292C7.40769%206.1845%207.20436%206.23771%206.99985%206.22405Z%22%20fill%3D%22%23231F20%22%2F%3E%3C%2Fsvg%3E') no-repeat right 1.2rem center;
+    background-size: 14px 7px;
+    padding-right: 20px;
     border: none;
     outline: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
 }
 
 .button{
@@ -166,5 +167,5 @@
     font-size: 14px;
     font-style: normal;
     font-weight: 700;
-    line-height: 28px; /* 200% */
+    line-height: 28px;
 }
