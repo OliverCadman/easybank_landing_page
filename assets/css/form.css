@@ -1,6 +1,7 @@
 .Contact-section {
+    display:flex;
     background-color: var(--light-gray-blue);
-    height: 450px;
+    height: 350px;
 }
 
 .contact-section-container {
@@ -21,9 +22,9 @@
 .contact-image {
     position: relative;
     text-align: center;
-    transform: translate(-200px);
-    height: 120%;
-    width: 120%;
+    margin-left: -10%;
+    
+    
 }
 
 .contact-content {
@@ -31,26 +32,46 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: -5%;
+    
 }
 
+.contact-content h3 {
+    
+}
 
 form {
     background-color: rgb(250, 250, 250);
     padding: 20px;
     border-radius: 10px;
+    border: 0;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    height:180px;
+    height:350px;
     width: 500px;
     max-width: 400px;
-    position:relative;
-    top: -20%;
-    size: 1200px;
-    transform: translate(-100px);
+    position: relative;
+    right: -20%;
+    margin-right: -30%;
+    text-align: center;
+    top: -22%;
+
 }
 
 .form-caption {
     position: relative;
-    top: -22%;
-    font-size: 15px;
+    top: -15%;
+    left: -20%;
+    font-size: 20px;
+    text-align: center;
+    
+    
     
 }
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 2px 0;
+    box-sizing: border-box;
+    position: relative;
+  }
