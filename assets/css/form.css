@@ -3,6 +3,7 @@
 .Sec-3 {
     background: #F4F5F7;
     display: flex;
+    flex-flow: row wrap;
     width: 100%;
     height: 435px;
     flex-shrink: 0;
@@ -13,20 +14,20 @@
 .container {
     position: relative;
     text-align: center;
-    width: 887px;
-    height: 460px;
+    width: 90%
+    height: 25%;
     flex-shrink: 0;
-    transform: translate(-200px);
-    bottom: 25px;
+    transform: translate(-22%);
+    bottom: 13%;
     
 }
 
 .centered {
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 56px;
+    font-size: 350%;
     color: #FFF;
     font-family: Public Sans;
     font-style: normal;
@@ -39,16 +40,17 @@
     position: absolute;
     color: #9597A5;
     font-family: Public Sans;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 300;
     line-height: 38px;
     letter-spacing: -1px;
-    width: 565px;
-    text-align: right;
+    width: 35%;
+    text-align: left;
     align-items: center;
-    transform: translate(750px);
-    bottom: -800px;
+    transform: translate(150%);
+    bottom: -100%;
+    
 }
 
 .Contact-form {
@@ -60,14 +62,14 @@
     font-style: normal;
     font-weight: 300;
     line-height: 38px;
-    width: 565px;
+    width: 20%;
     height: 169px;
     flex-shrink: 0;
     gap: 10px;
     text-align: center;
     align-items: center;
     padding: 2px;
-    transform: translate(-200px);
+    transform: translate(-245px);    
     top: 200px;
     left: 75px;
 }
@@ -86,7 +88,7 @@
 }
 
 /* Desktop Screen Width */
-@media screen and (min-width: 1200px) {
+/* @media screen and (min-width: 1200px) {
     .Sec-3 {
     display: flex;
     flex-flow: row wrap;
@@ -95,20 +97,47 @@
 }
 
 /* Laptop Screen Width */
-    @media screen and (min-width: 1000px) and (max-width: 1330px) {
-        .hero__bg {
-          grid-template-columns: 40% 1fr;
-        }
-      }
-
-/* Tablet Screen Width */
-    @media screen and (min-width: ) and (max-width: ) {
+    /* @media screen and (min-width: 1000px) and (max-width: 1330px) {
         
+        }
+      } */
+
+ /*Tablet Screen Width*/
+    @media screen and (max-width: 650px) {
+
+        .Sec-3{
+            display: block;
+        }
+        .Request {
+            display: block;
+            transform: translate(150%);
+            bottom: -300%;
+            width: max-content;
+    }
+        .container {
+            
+        }
+        .centered {
+          font-size: 150%;
+          display: flex;
+          line-height: 130%;
+        }
+
+
+
+    /* .Contact-form form input{
+        display: block;
+    } */
     }
 
 /* Phone Screen Width */
-@media screen and (max-width: 650px) {
+/* @media screen and (max-width: 650px) {
         .Sec-3{
-            display: block;
+            padding-bottom: 15%;
         } 
-}
+        .Contact-form{
+            position: static;
+            width: auto;
+            
+        } */
+/* } */
