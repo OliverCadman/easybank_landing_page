@@ -300,7 +300,7 @@ svg {
   flex-flow: row wrap;
   justify-content: space-between;
   background-color: var(--light-gray-blue);
-  padding-top: -5%;
+  
   
 }
 
@@ -317,6 +317,9 @@ figure{
 
 .contact__bg img{
   margin-left: -38%;
+  position: relative;
+  top: 30%;
+  
   
 }
 
@@ -395,11 +398,26 @@ figure{
 /* join us button*/
 .contact__form-box form button{
   margin-top: 10%;
-  margin-left: 10%;
+  margin-left: 15%;
   width: 65%;
 
   
 }
+/* error div box*/
+.error-box{
+  width: max-content;
+  padding: 1%;
+  margin: 5%;
+  margin-left: 15%;
+  
+}
+
+/* error message */
+#error-msg{
+  color: red;
+  font-weight: bolder;
+}
+
 /* contact form for mobile*/
 @media screen and (max-width: 1000px){
   .about-contact{
@@ -413,7 +431,7 @@ figure{
   .contact__bg-h1{
     position: absolute;
     top: 38%;
-    left: 25%;
+    left: 20%;
     
   }
   .contact-img{
@@ -449,7 +467,7 @@ figure{
 
   .contact__form h1{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 16%;
   }
 
@@ -470,6 +488,7 @@ figure{
     padding: 3%;
     margin: 2%;
     width: 82%;
+    font-size: 0.8rem;
  
   }
 
@@ -478,6 +497,14 @@ figure{
     width: 95%;
     font-size: 1.2rem;
    
+    
+  }
+
+  
+
+  #error-msg{
+    font-size: small;
+    font-weight: bold;
     
   }
   
