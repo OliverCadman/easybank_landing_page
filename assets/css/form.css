@@ -87,9 +87,10 @@
     align-items: center;
 }
 
+/*Mobile and Desktop Responsive*/
 
- /*Phone Screen Width*/
-    @media screen and (max-width: 650px) {
+/*Phone Screen Width*/
+@media screen and (max-width: 650px) {
 
         .Sec-3{
             display: block;
