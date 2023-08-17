@@ -1,0 +1,114 @@
+/* css variables - contact form section*/
+
+.Sec-3 {
+    background: #F4F5F7;
+    display: flex;
+    width: 100%;
+    height: 435px;
+    flex-shrink: 0;
+}
+
+
+
+.container {
+    position: relative;
+    text-align: center;
+    width: 887px;
+    height: 460px;
+    flex-shrink: 0;
+    transform: translate(-200px);
+    bottom: 25px;
+    
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 56px;
+    color: #FFF;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+.Request { /*  */
+    position: absolute;
+    color: #9597A5;
+    font-family: Public Sans;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: -1px;
+    width: 565px;
+    text-align: right;
+    align-items: center;
+    transform: translate(750px);
+    bottom: -800px;
+}
+
+.Contact-form {
+    position: relative;
+    background: #fff;
+    color: #979797;
+    font-family: Public Sans;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    width: 565px;
+    height: 169px;
+    flex-shrink: 0;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 2px;
+    transform: translate(-200px);
+    top: 200px;
+    left: 75px;
+}
+
+.dd { /* Dropdown */
+    background: #fff;
+    color: #979797;
+    font-family: Public Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    flex-shrink: 0;
+    text-align: left;
+    align-items: center;
+}
+
+/* Desktop Screen Width */
+@media screen and (min-width: 1200px) {
+    .Sec-3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    }
+}
+
+/* Laptop Screen Width */
+    @media screen and (min-width: 1000px) and (max-width: 1330px) {
+        .hero__bg {
+          grid-template-columns: 40% 1fr;
+        }
+      }
+
+/* Tablet Screen Width */
+    @media screen and (min-width: ) and (max-width: ) {
+        
+    }
+
+/* Phone Screen Width */
+@media screen and (max-width: 650px) {
+        .Sec-3{
+            display: block;
+        } 
+}
