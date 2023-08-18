@@ -4,7 +4,7 @@
     height: 350px;
 }
 
-.contact-section-container {
+.contact-section-right {
     display: flex;
     flex-direction: row;
     align-items: center;
