@@ -51,10 +51,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     if (!isValid) {
-      event.preventDefault(); // Prevent form submission
+      event.preventDefault();
     } else {
       alert("Form submitted successfully!");
-      // You can remove the alert and handle further AJAX submission or any other logic here
     }
   });
 
@@ -62,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const errorDiv = document.createElement("div");
     errorDiv.className = "error-message";
     errorDiv.innerText = message;
-    errorDiv.style.color = "red"; // Adjust styling as needed
+    errorDiv.style.color = "red";
     element.parentElement.appendChild(errorDiv);
   }
 });

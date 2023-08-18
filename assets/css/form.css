@@ -131,6 +131,7 @@
     -webkit-appearance: none;
     -moz-appearance: none;
     border-radius: 0;
+    -webkit-min-device-pixel-ratio:0
 }
 
 .button{
@@ -158,6 +159,9 @@
     font-weight: 700;
     line-height: 28px;
 }
+
+
+
 
 @media (max-width: 768px) {
     .wrapper {
@@ -244,5 +248,4 @@
         font-size: 0.8em;
         margin-top: 5px;
     }
-
 }
