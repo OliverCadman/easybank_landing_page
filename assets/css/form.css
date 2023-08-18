@@ -18,7 +18,8 @@
     width: 100%;
     position: relative;
     display:flex;
-    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
 }
 
 .image-desktop {
@@ -41,6 +42,7 @@
     letter-spacing: -1px;
     padding: 10px 0;
     position: relative;
+    text-align: left;
 }
 
 .caption-form {
