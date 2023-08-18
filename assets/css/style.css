@@ -4,11 +4,9 @@
 :root {
   /* Button/Icon Gradients */
   --bg-gradient-fallback: rgb(51, 211, 94);
-  --bg-gradient: linear-gradient(
-    45deg,
-    rgba(51, 211, 94, 1) 0%,
-    rgba(42, 182, 217, 1) 100%
-  );
+  --bg-gradient: linear-gradient(45deg,
+      rgba(51, 211, 94, 1) 0%,
+      rgba(42, 182, 217, 1) 100%);
 
   /* Primary BGs */
   --dark-blue: #2d314d;
@@ -19,11 +17,9 @@
 
   /* Overlay BG */
   --bg-overlay-fallback: rgb(0, 0, 0, 0.3);
-  --bg-overlay-gradient: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0.6307773109243697) 0%,
-    rgba(0, 0, 0, 0.10136554621848737) 100%
-  );
+  --bg-overlay-gradient: linear-gradient(180deg,
+      rgba(0, 0, 0, 0.6307773109243697) 0%,
+      rgba(0, 0, 0, 0.10136554621848737) 100%);
 
   /* Font Colours */
   --text-gray: #9597a5;
@@ -381,8 +377,42 @@ small {
   letter-spacing: -0.23px;
 }
 
+.c-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.8rem;
+}
+
+.c-col {
+  width: 100%;
+  padding: 0.8rem;
+}
+
+.c-col-full {
+  width: 100%;
+  padding: 1rem;
+}
+
+.inp {
+  background-color: #F4F5F7;
+  padding: 10px 5px;
+  border: 0;
+  width: 100%;
+  font-weight: 300;
+}
+
+.text-center {
+  text-align: center;
+}
+
 /* Desktop Screen Width */
 @media screen and (min-width: 1000px) {
+
+  .c-col {
+    width: 50%;
+    padding: 0.8rem;
+  }
+
   .p-lead {
     font-size: 1rem;
     line-height: 26px;
@@ -478,6 +508,7 @@ small {
     background-position: calc(100% + 250px) calc(100% - 200px);
     height: 800px;
   }
+
   .hero__bg-images {
     order: 2;
   }
@@ -607,6 +638,7 @@ small {
     grid-column: 2 / 3;
     grid-row: 1 / -1;
   }
+
   .footer__easybank-links .navlink-list li:nth-child(6) {
     grid-column: 2 / 3;
   }
