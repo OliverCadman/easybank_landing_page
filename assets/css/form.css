@@ -1,0 +1,123 @@
+/* css variables - contact form section*/
+
+.Sec-3 {
+    background: #F4F5F7;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    height: 435px;
+    flex-shrink: 0;
+}
+
+
+
+.container { /* Image */
+    position: relative;
+    text-align: center;
+    width: 90%
+    height: 25%;
+    flex-shrink: 0;
+    transform: translate(-22%);
+    bottom: 13%;
+    
+}
+
+.centered { /* Unlock */
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 350%;
+    color: #FFF;
+    font-family: Public Sans;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 64px;
+    letter-spacing: -1px;
+}
+
+.Request { 
+    position: absolute;
+    color: #9597A5;
+    font-family: Public Sans;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    letter-spacing: -1px;
+    width: 35%;
+    text-align: left;
+    align-items: center;
+    transform: translate(150%);
+    bottom: -100%;
+    
+}
+
+.Contact-form {
+    position: relative;
+    background: #fff;
+    color: #979797;
+    font-family: Public Sans;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    width: 30%;
+    height: 45%;
+    flex-shrink: 0;
+    gap: 10px;
+    text-align: center;
+    align-items: center;
+    padding: 0.5%;
+    transform: translate(-42%);    
+    top: 35%;
+    left: 5.5%;
+}
+
+.dd { /* Dropdown */
+    background: #fff;
+    color: #979797;
+    font-family: Public Sans;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px;
+    flex-shrink: 0;
+    text-align: left;
+    align-items: center;
+}
+
+/*Mobile and Desktop Responsive*/
+
+/*Phone Screen Width*/
+@media screen and (max-width: 650px) {
+
+        .Sec-3{
+            display: block;
+            height: 130%;
+        }
+        .Request {
+            display: block;
+            transform: translate(7%);
+            bottom: -227%;
+            font-size: 130%;
+            width: 90%;
+        }
+        .centered {
+            font-size: 150%;
+            display: flex;
+            line-height: 130%;
+        }
+        .container{
+            display: flex;
+            translate: 0% -60%;
+            
+            
+        }       
+        .Contact-form {
+            transform: translate(7%);
+            height: 65%;
+            width: 80%;
+            margin-top: -25%;
+        }
+    }
