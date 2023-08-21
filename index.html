@@ -28,7 +28,7 @@
                     <a href="#" class="navlink">About</a>
                 </li>
                 <li>
-                    <a href="#" class="navlink">Contact</a>
+                    <a href="#about-contact" class="navlink">Contact</a>
                 </li>
                 <li>
                     <a href="#" class="navlink">Blog</a>
@@ -125,6 +125,73 @@
                     </li>
                 </ul>
             </div>
+        </section>
+        <section class="about-contact" id="about-contact">
+
+            <figure class="about-contact-box1">
+                
+                <div class="contact__bg">
+    
+                    <img src="assets/images/bg-invite-form.svg" alt="" class="contact-img">
+                    <div class="contact__bg-h1"><h1> Unlock your <br> financial freedom</h1></div>
+                </div>
+            </figure>
+
+            <figure class="about-contact-box2">
+                <div class="contact__form">
+                    <h1>Request your exclusive invitation to join our Digital Banking revolution!</h1>
+
+                    <div class="error-box">
+                         <p id="error-msg"></p>       
+                    </div>
+                    
+                    <div class="contact__form-box">
+
+                        <form action="">
+
+                            <div>
+                                <label for="firstName"></label>
+                                <input type="text" name="" id="firstName" placeholder="First Name">
+                                
+            
+                                <label for="lastName"></label>
+                                <input type="text" name="" id="lastName" placeholder="Last Name">
+                            </div>
+                            
+                            <div>
+                                <label for="telephone"></label>
+                                <input type="tel" name="telephone" id="telephone" placeholder="Telephone" >
+        
+                                <label for="email"></label>
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+                            
+                            
+                            <div>
+                                <label for=""></label>
+                                <select name="" id="">
+                                    <option value="">How did you hear about us?</option>
+                                    <option value="">Search Engine</option>
+                                    <option value="">LinkedIn</option>
+                                    <option value="">Email or Newsletter</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <button type="button" class="cta-btn" onclick="errorMsg()"> Join us</button>
+                            </div>
+                            
+        
+                        
+        
+                        </form>
+
+                    </div>
+                    
+    
+                </div>
+            </figure>
+            
         </section>
         <section class="article-section">
             <div class="section__padded">
@@ -323,12 +390,25 @@
         const mobNavDropdown = document.querySelector("#navbarNav");
         const navToggler = document.querySelector("#navbar-toggler");
         const navOverlay = document.querySelector("#overlay");
-
+        
         navToggler.addEventListener("click", () => {
             mobNavDropdown.classList.toggle("show");
             navOverlay.classList.toggle("show");
 
         })
+
+        
+        function errorMsg(){
+            let fname = document.getElementById("firstName").value;
+            let lname = document.getElementById("lastName").value;
+            let tel = document.getElementById("telephone").value;
+            let email = document.getElementById("email").value;
+
+            if(fname == "" || lname == "" || tel == "" || email == ""){
+                text = "Ops!! Please amend the fields highlighted below."
+            }
+            document.getElementById("error-msg").innerHTML = text;
+        }
     </script>
 </body>
 

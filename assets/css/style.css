@@ -291,7 +291,222 @@ svg {
   font-weight: 300;
   margin: 1.5rem 0 1rem 0;
 }
+/* Contact Section */
 
+
+
+.about-contact{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  background-color: var(--light-gray-blue);
+  
+  
+}
+
+figure{
+  flex-basis: 50%;
+
+}
+/*about-contact page box1*/
+.contact__bg{
+  position: relative;
+  text-align: center;
+}
+/*side-image*/
+
+.contact__bg img{
+  margin-left: -38%;
+}
+
+/*text positioning over side-image*/
+
+.contact__bg-h1{
+  position: absolute;
+  top: 35%;
+  left: 15%;
+  
+}
+.contact__bg-h1 h1{
+  color: white;
+  
+  font-size: 2.6rem;
+  text-align: left;
+  
+  
+}
+
+/*about-contact page box2*/
+
+.about-contact-box2{
+  
+  padding-top: 3% ;
+  padding-right: 15%;
+}
+
+/*heading*/
+.contact__form h1{
+  
+  font-size: 1.8rem;
+  letter-spacing: -0.57px;
+  color: #9597a5;
+  
+  
+}
+
+
+/*form*/
+.contact__form-box{
+  background-color: white;
+  padding-top: 8%;
+  padding-left: 5%;
+  margin: 4%;
+  margin-left: 1%;
+  padding-bottom: 7%;
+  width: 100%;
+}
+
+/* input */
+.contact__form-box form input{
+  background-color: var(--light-gray-blue);
+  border: none;
+  padding: 2%;
+  margin: 2%;
+  color: #9597a5;
+  width: 42%;
+  font-size: 1rem;
+  
+  
+}
+
+/* select */
+
+.contact__form-box form select{
+  background-color: var(--light-gray-blue);
+  border: none;
+  padding: 2%;
+  margin: 2%;
+  color: #9597a5;
+  width: 90%;
+  font-size: 1rem;
+}
+
+/* join us button*/
+.contact__form-box form button{
+  margin-top: 10%;
+  margin-left: 15%;
+  width: 65%;
+
+  
+}
+/* error div box*/
+.error-box{
+  width: max-content;
+  padding: 1%;
+  margin: 5%;
+  margin-left: 15%;
+  
+}
+
+/* error message */
+#error-msg{
+  color: red;
+  font-weight: bolder;
+}
+
+/* contact form for mobile*/
+@media screen and (max-width: 1000px){
+  .about-contact{
+    padding-bottom: 15%;
+  }
+  /*about-contact-box1*/
+  .contact__bg{
+    margin-left: -13%;
+  }
+
+  .contact__bg-h1{
+    position: absolute;
+    top: 38%;
+    left: 20%;
+    
+  }
+  .contact-img{
+    content: url("/assets/images/bg-invite-form-mobile.svg");
+    width: max-content;
+    
+
+  } 
+  .about-contact{
+    display: block;
+  }
+  .contact__bg-h1 h1{
+
+    font-size: 2.3rem;
+ 
+  }
+  
+  /*about-contact-box2*/
+  .about-contact-box2{
+   
+    margin-top: -10%;
+    
+  }
+  .contact__form-box{
+    background-color: white;
+    margin-left: 9%;
+    margin-bottom: -5%;
+    height: fit-content;
+    padding-left: 10%;
+    
+    
+  }
+
+  .contact__form h1{
+    text-align: center;
+    font-size: 1.2rem;
+    padding-left: 16%;
+  }
+
+  
+
+  .contact__form-box form input{
+   
+    
+    padding: 3%;
+    margin: 2%;
+    width: 82%;
+ 
+  }
+
+  .contact__form-box form select{
+   
+    
+    padding: 3%;
+    margin: 2%;
+    width: 82%;
+    font-size: 0.8rem;
+ 
+  }
+
+  .contact__form-box form button{
+    margin-left: 0%;
+    width: 95%;
+    font-size: 1.2rem;
+   
+    
+  }
+
+  
+
+  #error-msg{
+    font-size: small;
+    font-weight: bold;
+    
+  }
+  
+
+
+}
 /* Article Section */
 .article-section {
   background-color: var(--very-light-gray);
