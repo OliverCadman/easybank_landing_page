@@ -633,3 +633,118 @@ small {
     grid-template-columns: 40% 1fr;
   }
 }
+/* My CSS Code */
+
+/* #1 id selector for form background */
+#contact-form{
+  background: white;
+  padding: 1rem;
+}
+/* #2 container of the form to center it  */
+.container-form{
+  height: 100%;
+  margin: auto;
+}
+
+/* #3 the title in top of the form  */
+.title-form-top{
+  color: var(--text-gray);
+  font-size: 1.8rem;
+  text-align: justify;
+  text-justify: auto;
+  margin-bottom: 30px;
+}
+
+/* #4 editing the standard input to remove borders */
+input{
+  border: none!important;
+  background-color: var(--light-gray-blue);
+  color: var(--text-gray);
+}
+
+/* #5 The full section styling */
+.contact-form-section {
+  background-color: var(--light-gray-blue);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 0 auto;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+}
+
+/* #6 First container relative */
+.container-image{
+  position: relative;
+}
+
+/* #7 image with display in block to ignore sibling */
+.form-image{
+  display: block;
+}
+
+/* #8 text set up to ignore sibling and sit in top of it with z-index */
+.title-form{
+  top:40%;
+  left:50%;
+  font-size: 2.8rem;
+  text-align: left;
+  font-weight: 100;
+  transform: translate(-50%,-50%);
+  position: absolute;
+  color: white;
+  z-index: 1;
+}
+/* #9 Grid of the form fields */
+.form-div{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+/* #10 separation of fields */
+.form-group {
+  margin-bottom: 20px;
+  display: grid;
+  margin: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;+
+}
+/* #11 size of the fields of the form */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.note {
+  font-size: 12px;
+  color: #777;
+}
+
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  appearance: none;  /* This will remove the default appearance of select in some browsers */
+  background: url('path_to_arrow_icon.png') no-repeat right center; /* This is optional: to show a custom arrow for the dropdown */
+}
+
+/* Styling for select when it's focused */
+/* select:focus {
+  outline: none;
+  border-color: #007BFF; you can change this to any color you prefer */
+}
+
+/* The default option in the dropdown to make it look like a placeholder */
+select option[value=""] {
+  color: #888;  You can adjust this color to make it slightly faded like placeholders
+}
