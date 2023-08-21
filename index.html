@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/form.css">
+
     <title>Easybank</title>
 </head>
 
@@ -126,6 +128,62 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Wrapper container for invite form -->
+        <section class="invite-form-container">
+            <div class="wrapper">
+                <div class="image-container">
+                    <img class="image-desktop" src="assets/images/bg-invite-form.svg" alt="Desktop Invite form image">
+                    <img class="image-mobile" src="assets/images/bg-invite-form-mobile.svg" alt="Mobile Invite form image">
+                    <div class="overlay-text">Unlock your financial freedom</div>
+                </div>
+
+            <!-- New Form Section -->
+            <div class="caption-form">
+                <div class="caption">
+                    <p>
+                        Request your exclusive invitation to join our Digital Banking revolution!
+                    </p>
+                </div>
+                <form class="form" action="#" method="post" novalidate>
+
+                        <div class="input-group">
+                            <input type="text" id="firstName" name="firstName" required placeholder="First Name">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="text" id="lastName" name="lastName" required placeholder="Last Name">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="tel" id="telephone" name="telephone" required placeholder="Telephone">
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" name="email" required placeholder="Email">
+                        </div>
+
+                        <div class="textarea-group">
+                            <select id="hearAboutUs" name="hearAboutUs">
+                                <option value="" disabled selected>How did you hear about us?</option>
+                                <option value="google">Google</option>
+                                <option value="adverts">Advertisements</option>
+                                <option value="friends_family">Family and Friends</option>
+                                <option value="social_media">Social Media</option>
+                                <option value="events">Events/Conferences</option>
+                                <option value="word_of_mouth">Word of Mouth</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                    <div class="button">
+                        <button type="submit">Join Us</button>
+                    </div>
+                </form>
+            </div>
+            <!-- End of the form -->
+            </div>
+    </section>
         <section class="article-section">
             <div class="section__padded">
                 <header class="section-header">
@@ -330,6 +388,7 @@
 
         })
     </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
