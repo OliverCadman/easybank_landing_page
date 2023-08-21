@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+  .white-box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    display: flex;
+    gap: 20px;
+  }
+  .image {
+    flex: 1;
+    padding: 10px;
+  }
+  .content {
+    flex: 2;
+    padding: 10px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .form-group {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  .form-group .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  .form-group .input-group input,
+  .form-group select {
+    flex: 1;
+    padding: 5px;
+    background-color: lightgrey;
+    border: 1px solid white;
+    border-radius: 5px;
+    color: darkgrey;
+  }
+  .form-group select {
+    margin-right: 10px;
+    margin-bottom: 5px;
+  }
+  .submit-button {
+    margin-top: 10px;
+    text-align: right;
+  }
+  .submit-button button {
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid white;
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .white-box {
+      flex: auto;
+    }
+    .form-group .input-group input,
+    .form-group select {
+      flex: none;
+      width: 100%;
+    }
+  }
+</style>
+<title>Digital Banking Revolution</title>
+</head>
+<body>
+  <div class="container">
+    <div class="white-box">
+      <div class="image">
+        <img src="your-image-url.jpg" alt="Digital Banking Revolution">
+      </div>
+      <div class="content">
+        <div class="title">
+          Request your exclusive invitation to join our Digital Banking revolution!
+        </div>
+        <form>
+          <div class="form-group">
+            <div class="input-group">
+              <input type="text" placeholder="First Name" required>
+              <input type="text" placeholder="Last Name" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="tel" placeholder="Telephone" required>
+            <input type="email" placeholder="Email" required>
+          </div>
+          <div class="form-group">
+            <select name="hearAboutUs" required>
+              <option value="" disabled selected>Select an option</option>
+              <option value="socialMedia">Social Media</option>
+              <option value="tvAdvert">TV Advert</option>
+              <option value="newspaper">Newspaper</option>
+            </select>
+          </div>
+          <div class="submit-button">
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
