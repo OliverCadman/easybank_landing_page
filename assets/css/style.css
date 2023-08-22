@@ -710,7 +710,7 @@ small {
     background-image: url(../images/bg-invite-form.svg);
     background-repeat: no-repeat;
     background-size: cover;
-    transform: translate(-60%, -30%);
+    transform: translate(-55%, -30%);
     width: 1025px;
     height: 600px;
 }
