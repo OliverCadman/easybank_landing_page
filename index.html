@@ -59,7 +59,7 @@
             </div>
         </section>
         <section class="about-section">
-            <div class="section__padded">
+            <article class="section padded">
                 <header class="section-header">
                     <h2>
                         Why choose Easybank?
@@ -124,42 +124,49 @@
 
                     </li>
                 </ul>
-                <div class="about-section__form-container">
-                    <div class="header form-bg">
-                        <h2 class="large-subheader-sm">
-                            Unlock Your Financial Freedom
-                        </h2>
-                    </div>
-                    <div class="form-wrapper">
-                        <div class="form-callout">
-                            <p>Request your exclusive invitation to join our Digital Banking revolution!</p>
-                        </div>
-                        <form action="#" class="invite-form">
-                            <div class="form-group">
-                                <input type="text" placeholder="First Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Last Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Telephone">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="Email">
-                            </div>
-                            <div class="form-group">
-                                <input type="text" placeholder="How did you hear about us?">
-                            </div>
-                            <div class="form-group">
-                                <button type="submit" class="submit-btn cta-btn">Join Us</button>
-                            </div>
-                        </form>
-                    </div>
+            </article>
+            <aside class="form__container padded-right-lg padded-mob">
+                <div class="form-header form-bg">
+                    <h2 class="large-subheader-sm">
+                        Unlock your financial freedom
+                    </h2>
                 </div>
-            </div>
+                <div class="form-wrapper">
+                    <div class="form-callout">
+                        <p>Request your exclusive invitation to join our Digital Banking revolution!</p>
+                    </div>
+                    <form action="#" class="invite-form">
+                        <div class="form-group">
+                            <input type="text" aria-label="First Name" placeholder="First Name" id="fname" name="fname">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" aria-label="Last Name" placeholder="Last Name" id="lname" name="lname">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" aria-label="Telephone" placeholder="Telephone" id="telephone"
+                                name="telephone">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" aria-label="Email" placeholder="Email" id="email" name="email">
+                        </div>
+                        <div class="form-group marketing-select">
+                            <label for="marketing">How did you hear about us?</label>
+                            <select name="marketing" class="marketing-input" id="marketing">
+                                <option value="instagram">Instagram</option>
+                                <option value="facebook">Facebook</option>
+                                <option value="linkedin">LinkedIn</option>
+                                <option value="word-of-mouth">Word of Mouth</option>
+                            </select>
+                        </div>
+                        <div class="form-group submit-btn__wrapper">
+                            <button type="submit" class="submit-btn cta-btn">Join Us</button>
+                        </div>
+                    </form>
+                </div>
+            </aside>
         </section>
         <section class="article-section">
-            <div class="section__padded">
+            <div class="section padded">
                 <header class="section-header">
                     <h2>Latest Articles</h2>
                 </header>

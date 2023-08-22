@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans:wght@200;300;400;700&display=swap");
 
 /* CSS Variables */
 :root {
@@ -291,7 +291,7 @@ svg {
   margin-bottom: 0.875rem;
 }
 
-.section__padded {
+.padded,.padded-mob {
   padding: 4rem 1.5rem;
 }
 
@@ -315,6 +315,10 @@ svg {
 
 /* Form Section */
 
+.form__container {
+  display: block;
+}
+
 .form-bg {
   position: relative;
   top: 125px;
@@ -334,11 +338,12 @@ svg {
   height: 400px;
 }
 
-.header.form-bg h2 {
+.form-header.form-bg h2 {
   color: white;
   position: relative;
   width: 300px;
   margin: 0 auto;
+  font-weight: 200;
 }
 
 .invite-form {
@@ -353,6 +358,19 @@ svg {
   width: 100%;
 }
 
+.form-group.marketing-select {
+  text-align: left;
+}
+
+.form-group.marketing-select label,
+.form-group.marketing-select select {
+   color: #757575;
+}
+
+.marketing-input {
+  margin-top: .5rem;
+
+}
 .form-callout {
   margin-bottom: 2.25rem;
 }
@@ -459,6 +477,10 @@ small {
 
 /* Desktop Screen Width */
 @media screen and (min-width: 1000px) {
+  .padded-mob {
+    padding: 0;
+  }
+
   .p-lead {
     font-size: 1rem;
     line-height: 26px;
@@ -594,8 +616,12 @@ small {
     text-align: left;
   }
 
-  .section__padded {
+  .padded {
     padding: 6rem 10.313rem 5.875rem 10.313rem;
+  }
+
+  .padded-right-lg {
+    padding-right: 10.313rem
   }
 
   .section-header {
@@ -631,10 +657,73 @@ small {
   }
 
   /* Form */
-  .about-section__form-container {
-    display: none;
+
+  .form__container,
+  .invite-form {
+    display: flex;
+    gap: 1.5rem;
   }
 
+  .form__container {
+    padding-bottom: 4rem;
+  }
+
+  .invite-form {
+    flex-flow: row wrap;
+  }
+
+  .form-header.form-bg h2 {
+  width: 75%;
+  margin: 0;
+  font-size: 3.5rem;
+  text-align: left;
+  font-size: 3.75vw;
+  transform: translate(40px, 75px);
+}
+
+  .form-callout {
+    margin-bottom: 1.688rem;
+  }
+
+  .form-callout p {
+    font-size: 2rem;
+    font-weight: 200;
+    line-height: 50px;
+  }
+
+  .form-group {
+    flex-basis: 100%;
+    margin: 0;
+  }
+
+  .form-group.marketing-select,
+  .form-group.submit-btn__wrapper {
+    flex-basis: 100%;
+  }
+
+  .form-bg {
+    top: 80px;
+  }
+
+  .form-bg::before {
+    position: absolute;
+    background-image: url(../images/bg-invite-form.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: translate(-60%, -30%);
+    width: 1025px;
+    height: 600px;
+}
+
+  .form-header,
+  .form-wrapper {
+    flex-basis: 50%;
+  }
+
+  .form-wrapper {
+    padding-left: 5rem;
+  }
+  
   /* Article Section */
 
   .article-content {
@@ -709,8 +798,19 @@ small {
   }
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1330px) {
-  .hero__bg {
-    grid-template-columns: 40% 1fr;
+@media screen and (min-width: 1235px) {
+  .form-group {
+    flex-basis: 47%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .form-header.form-bg h2 {
+    transform: translate(40px, 25px);
+  }
+
+  .form-bg:before {
+    width: 1050px;
+    height: 700px;
   }
 }
