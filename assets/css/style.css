@@ -341,9 +341,12 @@ svg {
 .form-header.form-bg h2 {
   color: white;
   position: relative;
-  width: 300px;
+  width: 350px;
   margin: 0 auto;
   font-weight: 200;
+  text-align: left;
+  font-size: 2.5rem;
+  transform: translateY(-20px);
 }
 
 .invite-form {
